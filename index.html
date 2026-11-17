@@ -1,1 +1,122 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Burger Heaven</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to BurgerHeaven Online</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Select burger</h2>
+            <p>This is where you execute burger selection</p>
+
+            <div style="display: inline-block; vertical-align: top;">
+                <h3>Double Cheese Burger</h3>
+                <img src="/img/doubleburger.png" alt="The Fire Burger with cheese, lettuce and tomato"
+                    style="width: 300px;">
+
+                <ul>
+                    <li>750 kcal</li>
+                    <li>Contains lactose</li>
+                    <li>Contains gluten</li>
+                </ul>
+            </div>
+
+            <div style="display: inline-block; vertical-align: top;">
+                <h3>Fried Chicken Burger</h3>
+                <img src="/img/chickenburger.png" alt="Fried turkey burger with lettuce and tomato"
+                    style="width: 300px;">
+
+                <ul>
+                    <li>600 kcal</li>
+                    <li>Contains lactose</li>
+                    <li>Gluten-free bread</li>
+                </ul>
+            </div>
+
+            <div style="display: inline-block; vertical-align: top;">
+                <h3>Korean Style Chicken Sandwich</h3>
+                <img src="/img/koreanburger.png" alt="Double burger with cheese and lettuce"
+                    style="width: 300px;">
+
+                <ul>
+                    <li>1800 kcal</li>
+                    <li>Contains lactose</li>
+                    <li>Contains gluten</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Customer information</h2>
+            <p>This is where you provide necessary information</p>
+
+            <h3>Delivery information:</h3>
+
+            <p>
+                <label for="fullname">Full name</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="First- and Last name">
+            </p>
+
+            <p>
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="email" placeholder="E-mail address">
+            </p>
+
+            <p>
+                <label for="street">Street</label><br>
+                <input type="text" id="street" name="street" placeholder="Street name">
+            </p>
+
+            <p>
+                <label for="house">House</label><br>
+                <input type="number" id="house" name="house" placeholder="House number" min="1" step="1">
+            </p>
+
+            <p>
+                <label for="payment">Payment method</label><br>
+                <select id="payment" name="payment">
+                    <option value="card" selected>Card</option>
+                    <option value="swish">Swish</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cash">Cash</option>
+                </select>
+            </p>
+
+            <fieldset style="border: none;">
+                <legend>Gender</legend>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+
+                <input type="radio" id="nonbinary" name="gender" value="nonbinary">
+                <label for="nonbinary">Non-binary</label><br>
+
+                <input type="radio" id="unspecified" name="gender" value="unspecified" checked>
+                <label for="unspecified">Do not wish to provide</label>
+            </fieldset>
+        </section>
+
+        <button type="button">
+            <img src="/img/check.png" alt="" style="width: 20px; height: 20px; vertical-align: middle;">
+            Place order!
+        </button>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2018 Hypothetical Burgers Inc.</p>
+    </footer>
+</body>
+
+</html>
