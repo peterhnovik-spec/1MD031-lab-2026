@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@700&display=swap');
 body {
+    font-family: 'Courier New', serif;
     font-size: 12pt;
 }
 
 p {
-    color: red;
+    color: lightblue;
 }
 
 h1 {
     font-family: 'Agbalumo';
     font-size: 36pt;
 }
+
 main, header, footer, nav ul {
-    max-width: 40rem;
+    max-width: 90rem;
     margin: 0 auto 0 auto;
 }
 main {
     background-color: bisque;
+    margin-bottom: 2rem;
+    padding-top: 0.5rem;
 }
 
 /* nav ul li {
@@ -27,20 +31,33 @@ main {
 } */
 
 header {
-    background-image: url("../img/polacks.jpg");
-    background-size: cover;
+    position: relative;
+    isolation: isolate;
+    padding: 2rem 0;
     overflow: hidden;
     width: 100%;
-    height: 200px;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background-image: url("../img/kong.jpg");
+    background-size: cover;
+    background-position: center;
     opacity: 0.5;
 }
 
 header h1 {
-    width:40rem;
+    max-width: 40rem;
     margin: 0 auto;
     text-align: center;
+    color: rgb(142, 103, 187);
 }
 
+/*
 nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, 9.25em);
@@ -53,7 +70,78 @@ nav li {
     background-color: grey;
     padding: 1em;
 }
+*/
 
+section{
+    margin: 2rem;
+}
+
+div{
+    display: inline-block; 
+    vertical-align: top;
+    padding: 3em;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.allergy {
+    font-weight: bold;
+    color: orange
+}
+
+#burgers{
+    background-color: black;
+    color: white;
+    border: 0.4rem dashed currentColor;
+}
+
+#customer, #burgers{
+    border: 0.4rem dashed currentColor;
+    padding: 1rem;
+}
+
+
+fieldset {
+    border: none;
+}
+
+button {
+    background-color: #e4914e; /* Bakgrundsfärg */
+    color: rgb(168, 75, 33);              /* Textfärg */
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1rem 3rem 2rem;
+    padding: 1rem;        /* Utrymme inuti knappen */
+    border: none;             /* Ta bort standardramen */
+    border-radius: 8px;        /* Rundade hörn */
+    cursor: pointer;           /* Handpekare */
+
+    /* Placera bilden och texten bredvid varandra */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: none;
+}
+
+/* När muspekaren är över knappen */
+button:hover {
+    background-color: #3e2d80;
+    color: rgb(190, 142, 219);
+}
+
+
+/*
 .Very-good {
     color: green;
 }
@@ -62,3 +150,8 @@ nav li {
     color: green;
     font-weight: bold;
 }
+*/
+
+
+
+

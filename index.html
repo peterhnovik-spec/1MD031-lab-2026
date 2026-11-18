@@ -4,6 +4,8 @@
 <head>
     <title>Burger Heaven</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body>
@@ -12,48 +14,45 @@
     </header>
 
     <main>
-        <section>
+        <section id="burgers">
             <h2>Select burger</h2>
             <p>This is where you execute burger selection</p>
 
-            <div style="display: inline-block; vertical-align: top;">
+            <div>
                 <h3>Double Cheese Burger</h3>
-                <img src="/img/doubleburger.png" alt="The Fire Burger with cheese, lettuce and tomato"
-                    style="width: 300px;">
+                <img src="/img/doubleburger.png" alt="The Fire Burger with cheese, lettuce and tomato">
 
                 <ul>
                     <li>750 kcal</li>
-                    <li>Contains lactose</li>
-                    <li>Contains gluten</li>
+                    <li class="allergy">Contains lactose</li>
+                    <li class="allergy">Contains gluten</li>
                 </ul>
             </div>
 
-            <div style="display: inline-block; vertical-align: top;">
+            <div>
                 <h3>Fried Chicken Burger</h3>
-                <img src="/img/chickenburger.png" alt="Fried turkey burger with lettuce and tomato"
-                    style="width: 300px;">
+                <img src="/img/chickenburger.png" alt="Fried turkey burger with lettuce and tomato">
 
                 <ul>
                     <li>600 kcal</li>
-                    <li>Contains lactose</li>
-                    <li>Gluten-free bread</li>
+                    <li class="allergy">Contains lactose</li>
+                    <li class="allergy">Contains gluten</li>
                 </ul>
             </div>
 
-            <div style="display: inline-block; vertical-align: top;">
+            <div>
                 <h3>Korean Style Chicken Sandwich</h3>
-                <img src="/img/koreanburger.png" alt="Double burger with cheese and lettuce"
-                    style="width: 300px;">
+                <img src="/img/koreanburger.png" alt="Double burger with cheese and lettuce">
 
                 <ul>
                     <li>1800 kcal</li>
-                    <li>Contains lactose</li>
-                    <li>Contains gluten</li>
+                    <li class="allergy">Contains lactose</li>
+                    <li class="allergy">Contains gluten</li>
                 </ul>
             </div>
         </section>
 
-        <section>
+        <section id="customer">
             <h2>Customer information</h2>
             <p>This is where you provide necessary information</p>
 
@@ -89,7 +88,7 @@
                 </select>
             </p>
 
-            <fieldset style="border: none;">
+            <fieldset>
                 <legend>Gender</legend>
 
                 <input type="radio" id="male" name="gender" value="male">
@@ -106,8 +105,8 @@
             </fieldset>
         </section>
 
-        <button type="button">
-            <img src="/img/check.png" alt="" style="width: 20px; height: 20px; vertical-align: middle;">
+        <button type="button" class="order-button">
+            <img src="/img/check.png" alt="">
             Place order!
         </button>
     </main>
